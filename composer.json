@@ -1,0 +1,39 @@
+{
+    "name": "timatanga/content2pdf",
+    "description": "The timatanga content2Pdf package. Generates PDF files from UTF-8 encoded content",
+    "keywords": ["html2pdf", "image2pdf", "mPDF", "FPDF", "HTML2FPDF"],
+    "type": "library",
+    "require": {
+        "php": "^8.0",
+        "mpdf/mpdf": "dev-development"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "10.0.x-dev",
+        "symfony/var-dumper": "6.0.x-dev"
+    },
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "timatanga\\Content2Pdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "timatanga\\Content2Pdf\\Providers\\Content2PdfServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Mark Fluehmann",
+            "email": "dbiz.apps@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
